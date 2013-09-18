@@ -64,7 +64,7 @@ To verify the JDK installation, open the Command Prompt and type `java -version`
 
 ### Linux
 
- - Download sbt from here: [http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz](http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz)
+ - Download sbt from here: [http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.4/sbt.tgz](http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.4/sbt.tgz)
  - Unpack the archive to a directory of your choice
  - Add the `bin/` directory to the `PATH` environment variable. Open the file `~/.bashrc` in an editor (create it if it doesn't exist) and add the following line
 ```export PATH=/PATH/TO/YOUR/sbt/bin:$PATH```
@@ -77,7 +77,7 @@ If you use the [homebrew](http://mxcl.github.com/homebrew/) package manager, sim
 
 Otherwise, install sbt by following these steps:
 
- - Download sbt from here: [http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz](http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.tgz)
+ - Download sbt from here: [http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.4/sbt.tgz](http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.4/sbt.tgz)
  - Unpack the archive to a directory of your choice
  - Add the `bin/` directory to the `PATH` environment variable. Open the file `~/.bash_profile` in an editor (create it if it doesn't exist) and add the following line
 ```export PATH=/PATH/TO/YOUR/sbt/bin:$PATH```
@@ -86,7 +86,7 @@ Verify that sbt is installed correctly: Open a new terminal (to apply the change
 
 ### Windows
 
- - Download the sbt installer from here: [http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.msi](http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.2/sbt.msi)
+ - Download the sbt installer from here: [http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.4/sbt.msi](http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.4/sbt.msi)
  - Run the installer
 
 Verify that sbt is installed correctly: open the Command Prompt and type `sbt sbt-version`, you should see the version number of sbt (the first time you run it, sbt will download libraries from the internet). If you have problems installing sbt, ask for help on the forums.
@@ -96,12 +96,12 @@ Verify that sbt is installed correctly: open the Command Prompt and type `sbt sb
 
 You can download the Scala IDE for eclipse with the Scala Worksheet pre-installed from the following URL:
 
-[http://typesafe.com/stack/scala_ide_download](http://www.typesafe.com/stack/downloads/scala-ide) (**Make sure to download the IDE for Scala version 2.10.1!**)
+[http://typesafe.com/stack/scala_ide_download](http://www.typesafe.com/stack/downloads/scala-ide) (**Make sure to download the IDE for Scala version 2.10.2!**)
 
 After downloading the archive for your operating system, simply unpack it and start eclipse. Eclipse requires you to select a workspace on startup. We recommend you create one workspace directory for this class and use it for all assignments.
 
 
-### Hello World: Scala IDE and the Scala Worksheet
+### Hello World: Scala IDE
 
 To familiarize yourself with the Scala IDE, create a small "Hello World" project in eclipse:
 
@@ -124,19 +124,3 @@ You should see a the hello world output in the Eclipse console.
     object Hello extends App {
       println("Hello, World!")
     }
-
-
-### Creating a Scala Worksheet
-
-Creating a Scala Worksheet is very easy:
-
-1. Right-click on the package `greeter` in the hello world project that you just created
-1. Select "New" - "Scala Worksheet"
-1. Choose a name for your worksheet (different than `Hello` or the name you chose for the "Scala Object" before)
-
-Now you can type some Scala code into the worksheet. Every time you save the file, the content of the worksheet will be evaluated. Copy the following code into the object of your worksheet:
-
-      val x = 1                                       //> x  : Int = 1
-      def increase(i: Int) = i + 1                    //> increase: (i: Int)Int
-      increase(x)                                     //> res0: Int = 2
-
